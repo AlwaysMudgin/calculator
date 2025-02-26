@@ -1,0 +1,25 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.calc-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.display {
+    flex-basis: 100%;
+    text-align: end;
+}
+
+.calc-grid button {
+    flex-basis: 25%;
+}
+
+.calc-grid .span-two {
+    flex-basis: 50%;
+}
