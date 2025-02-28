@@ -9,7 +9,7 @@ const buttons = document.querySelectorAll('button');
 function updateDisplay() {
     const display = document.getElementById('display');
     if(displayValue.length > 12) {
-        display.innerText = displayValue.substring(0, 11);
+        display.innerText = displayValue.substring(0, 12);
     } else {
         display.innerText = displayValue;
     }
