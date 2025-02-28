@@ -40,7 +40,6 @@ function clickButton() {
 clickButton();
 
 function inputNumber(number) {
-    console.log(`1 = ${firstNumber}; 2 = ${secondNumber}; operator = ${operator} display = ${displayValue}`);
     if(firstNumber === null) {
         if(displayValue === '0' || displayValue === 0 || displayValue === firstNumber || displayValue === result) {
             displayValue = number;
@@ -54,11 +53,9 @@ function inputNumber(number) {
             displayValue += number;
         }
     }
-    console.log(`1 = ${firstNumber}; 2 = ${secondNumber}; operator = ${operator} display = ${displayValue}`);
 }
 
 function inputOperator(op) {
-    console.log(`1 = ${firstNumber}; 2 = ${secondNumber}; operator = ${operator} display = ${displayValue}`);
     if(firstNumber === null) {
         firstNumber = displayValue;
         operator = op;
@@ -66,10 +63,7 @@ function inputOperator(op) {
         inputEquals();
         firstNumber = result;
         operator = op;
-    }
-    
-    
-    console.log(`1 = ${firstNumber}; 2 = ${secondNumber}; operator = ${operator} display = ${displayValue}`);
+    } 
 }
 
 function inputEquals() {
@@ -89,7 +83,6 @@ function inputEquals() {
     firstNumber = null;
     secondNumber = null;
     operator = null;
-    console.log(`1 = ${firstNumber}; 2 = ${secondNumber}; operator = ${operator}; result = ${result}`);
 }
 
 function inputClear() {
