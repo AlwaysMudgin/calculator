@@ -8,7 +8,11 @@ const buttons = document.querySelectorAll('button');
 
 function updateDisplay() {
     const display = document.getElementById('display');
-    display.innerText = displayValue;
+    if(displayValue.length > 12) {
+        display.innerText = displayValue.substring(0, 11);
+    } else {
+        display.innerText = displayValue;
+    }
 }
 
 updateDisplay();
@@ -38,7 +42,7 @@ clickButton();
 function inputNumber(number) {
     console.log(`1 = ${firstNumber}; 2 = ${secondNumber}; operator = ${operator} display = ${displayValue}`);
     if(firstNumber === null) {
-        if(displayValue === '0' || displayValue === 0 || displayValue === firstNumber) {
+        if(displayValue === '0' || displayValue === 0 || displayValue === firstNumber || displayValue === result) {
             displayValue = number;
         } else {
             displayValue += number;
