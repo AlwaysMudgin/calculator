@@ -1,25 +1,85 @@
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .calc-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    width: 500px;
+    align-items: stretch;
+    width: 300px;
+    height: 400px;
+    margin: auto auto;
+    background-color: rgb(29,26,47);
 }
 
 .display {
     flex-basis: 100%;
     text-align: end;
+    background-color: rgb(29,26,47);
+    color: ivory;
+    font-size: 50px;
+    align-self: center;
+    padding: 0 10px;
 }
 
-.calc-grid button {
+button {
     flex-basis: 25%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 400;
 }
 
-.calc-grid .span-two {
+.number, 
+.decimal {
+    background-color: rgb(139, 212, 80);
+}
+
+.number:hover, 
+.decimal:hover {
+    background-color: rgb(98, 162, 45);
+}
+
+.number:active, 
+.decimal:active {
+    background-color: rgb(63,109,78);
+}
+
+.clear,
+.sign,
+.percent,
+.operator,
+.equals {
+    background-color: rgb(150,95,212);
+}
+
+.clear:hover,
+.sign:hover,
+.percent:hover,
+.operator:hover,
+.equals:hover {
+    background-color: rgb(128, 74, 191);
+}
+
+.clear:active,
+.sign:active,
+.percent:active,
+.operator:active,
+.equals:active {
+    background-color: rgb(115,79,154);
+}
+
+#zero {
     flex-basis: 50%;
 }
